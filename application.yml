@@ -3,14 +3,12 @@ spring:
     active:
     - dev   #当前使用环境
 ---
-content: dev content 刷新后
-spring:
-  profiles: dev
+spring: 
+  profiles: dev #当前使用环境
   application:
     name: config-server-dev
 ---
-content: test content
 spring:
-  profiles: test
+  profiles: test    #测试环境
   application:
     name: config-server-test
