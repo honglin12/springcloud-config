@@ -1,14 +1,16 @@
 spring:
-    profiles:
-        active:
-        - dev
+  profiles:
+    active:
+    - dev   #当前使用环境
 ---
+content: dev content 刷新后
 spring:
-    profiles: dev
-    application:
-        name: config-server-dev
+  profiles: dev
+  application:
+    name: config-server-dev
 ---
+content: test content
 spring:
-    profiles: test
-    application:
-        name: config-server-test
+  profiles: test
+  application:
+    name: config-server-test
